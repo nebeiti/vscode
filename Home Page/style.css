@@ -276,8 +276,7 @@ span{
         box-sizing: border-box;
         font-size: 65%;
     }
-}
-
+}  
 .social-icons{
     display: flex;
     gap: 20px;
