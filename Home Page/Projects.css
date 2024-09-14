@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: black;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: 800;
+    color: purple;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: #e0aa3e;
+}
+#nav-menu{
+    margin: 20px;
+}
+nav a{
+    margin-top: 2.3rem;
+    font-size: 2.2rem;
+    color: #fffefef1;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.menu-icon {
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer; 
+    opacity: 0;
+}
+
+nav a:hover{
+    color: #e0aa3e;
+    border-bottom: 3px solid #0000ff;
+}
+nav a:active{
+    color: #bb3520e1;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin-left: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Description{
+    margin-left: 50px;
+}
+.projects{
+    margin-left: 40px;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+ .projects img{
+    margin-top: 170px;
+    margin-left: 2rem;
+    border: 1px solid blue;
+    border-top-left-radius: 17%; 
+    width: 400px;
+    height: 400px;
+}
+@media(max-width:996px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size: 67%;
+    }
+   nav a:active{
+        display: block;
+        color: rgb(235, 46, 109);
+}
+.menu-icon{
+    opacity: 1;
+}
+    nav{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-top-right-radius: 2.5rem;
+        border-bottom-left-radius: 2.5rem;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+        border: 5px solid #0000ff;
+        margin-top: 7rem;
+        margin-right: 2rem;
+        padding: 0;
+    }
+    nav.active {
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        margin-left: 2rem;
+
+    }
+
+    nav a:hover,
+    nav a:active{
+        padding: 0.5rem;
+    }
+}
