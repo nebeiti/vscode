@@ -27,7 +27,9 @@ h1{
     color: aliceblue;
     margin-right: 0;
     margin-bottom: 0px;
-    margin-left: 5rem;
+    margin-left: 55rem;
+    font-size: 4rem;
+    font-weight: 800;
 }
 header{
     position: fixed;
@@ -179,7 +181,7 @@ a{
         grid-template-columns: 1fr 1fr;
         margin-top: 20px;
         margin-right: 420px;
-        margin-left: 20px;
+        margin-left: 67px;
 
     }
     .projects-tile{
@@ -196,11 +198,13 @@ a{
     }
     h1{
         position: relative;
-        margin-top: 3pc;
+        margin-top: 4pc;
         color: aliceblue;
         margin-right: 0;
+        font-size: 2em;
         margin-bottom: -10px;
-        margin-left: 5rem;
+        margin-left: 67px;
+
     }
   }
   
