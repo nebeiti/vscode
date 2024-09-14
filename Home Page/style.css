@@ -46,10 +46,13 @@ header{
     transform: scale(1.1);
     color: #e0aa3e;
 }
-
+#nav-menu{
+    margin: 20px;
+}
 nav a{
-    font-size: 1.8rem;
-    color: white;
+    margin-top: 2.3rem;
+    font-size: 2.2rem;
+    color: #fffefef1;
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -62,12 +65,13 @@ nav a{
     opacity: 0; 
 }
 
-nav a:hover,
-nav a:active{
+nav a:hover{
     color: #e0aa3e;
     border-bottom: 3px solid #0000ff;
 }
-
+nav a:active{
+    color: #bb3520e1;
+}
 @media(max-width:996px){
     body{
         margin: 0;
@@ -258,9 +262,6 @@ span{
     }
 }
 @media (max-width:626px) {
-    /* h1{
-        font-size: 9.1rem;
-    } */
     .home-img img{
         position: relative;
         border: 2px solid #0404a9d2;
@@ -275,9 +276,6 @@ span{
         box-sizing: border-box;
         font-size: 65%;
     }
-    /* html{
-        font-size: 65%;
-    } */
 }
 
 .social-icons{
