@@ -72,57 +72,6 @@ nav a:hover{
 nav a:active{
     color: #bb3520e1;
 }
-@media(max-width:996px){
-    body{
-        margin: 0;
-        padding: 0;
-    }
-    html{
-        font-size: 40%;
-    }
-    .social-icons a{
-        margin-top: 2rem;
-        margin-bottom: 20rem;
-    }
-   nav a:active{
-        display: block;
-        color: rgb(235, 46, 109);
-}
-.menu-icon{
-    opacity: 1;
-}
-    nav{
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-top-right-radius: 2.5rem;
-        border-bottom-left-radius: 2.5rem;
-        background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-        border: 5px solid #0000ff;
-        margin-top: 7rem;
-        margin-right: 2rem;
-        padding: 0;
-    }
-    nav.active {
-        display: block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        margin-left: 2rem;
-
-    }
-
-    nav a:hover,
-    nav a:active{
-        padding: 0.5rem;
-    }
-}
 
 section{
     min-height: 100%;
@@ -241,7 +190,57 @@ span{
         
     }
 }
+@media(max-width:996px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size: 40%;
+    }
+    .social-icons a{
+        margin-top: 2rem;
+        margin-bottom: 20rem;
+    }
+   nav a:active{
+        display: block;
+        color: rgb(235, 46, 109);
+}
+.menu-icon{
+    opacity: 1;
+}
+    nav{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-top-right-radius: 2.5rem;
+        border-bottom-left-radius: 2.5rem;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+        border: 5px solid #0000ff;
+        margin-top: 7rem;
+        margin-right: 2rem;
+        padding: 0;
+    }
+    nav.active {
+        display: block;
+    }
 
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        margin-left: 2rem;
+
+    }
+
+    nav a:hover,
+    nav a:active{
+        padding: 0.5rem;
+    }
+}
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
