@@ -1,0 +1,50 @@
+/* Default Light Mode Styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Toggle Button Styles */
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 5px solid red;
+    width: 100px;
+    border-radius: 40%;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* SVG Styles */
+.toggle-container svg {
+    width: 40px;
+    height: 40px;
+    fill: #000000; /* Default fill color for light mode */
+    transition: fill 0.3s;
+}
+
+/* Hide the Dark Mode SVG by default */
+.toggle-container .Dark {
+    display: none;
+}
+
+/* Show Dark Mode SVG when in dark mode */
+body.dark-mode .toggle-container .Light {
+    display: none;
+}
+
+body.dark-mode .toggle-container .Dark {
+    display: block;
+    fill: #ffffff; /* Ensure the dark mode icon is visible on dark background */
+}

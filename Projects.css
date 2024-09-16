@@ -60,14 +60,18 @@ header{
 #nav-menu{
     margin: 20px;
 }
+.Projects:active{
+    border-bottom: 3px solid #0000ff;
+}
 nav a{
     margin-top: 2.3rem;
     font-size: 2.2rem;
     color: #fffefef1;
     margin-left: 4rem;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
+    position: relative;
 }
 .menu-icon {
     font-size: 2.5rem;
@@ -79,9 +83,20 @@ nav a{
 nav a:hover{
     color: #e0aa3e;
     border-bottom: 3px solid #0000ff;
+    transition: 0.5s ease-in-out;
 }
 nav a:active{
     color: #bb3520e1;
+}
+nav a::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  background: red;
+  top: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
 a{
     text-decoration: none;
@@ -100,11 +115,11 @@ a{
 }
  .projects img{
     margin-top: 170px;
-    margin-left: 2rem;
+    margin-left: 3rem;
     border: 1px solid blue;
     border-top-left-radius: 17%; 
-    width: 450px;
-    height: 400px;
+    width: 420px;
+    height: 370px;
 }
 /* Lightbox Styles */
 .lightbox {
