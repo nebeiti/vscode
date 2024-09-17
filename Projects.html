@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="Icon" href="nebeyu-logo.jfif" type="image/x-icon" class="page-logo">
+    <link rel="icon" href="nebeyu-logo.jfif" type="image/x-icon" class="page-logo">
     <link rel="stylesheet" href="Projects.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>My Portfolio</title>
 </head>
-<body for="active">
+<body>
     <header>
         <a href="#" class="logo" target="_blank">Nebeyu</a>
         <div class="menu-icon" id="menu-icon">
@@ -20,13 +20,13 @@
             <a href="Projects.html" class="Projects">Projects</a>
             <a href="Skills.html">Skills</a>
             <a href="Education.html">Education</a>
-            <a href="Education.html">Experience</a>
+            <a href="Experience.html">Experience</a>
             <a href="Contact.html">Contact</a>
         </nav>
     </header>
     <div class="txt">
         <h1>The Following Pictures Are Some Of My Projects:</h1>
-    </div>
+        </div>
     <div class="projects">
         <a href="./Tecnical-Documentation.png" class="Project-tile">
             <img src="./Tecnical-Documentation.png" alt="A Technical Documentation Page About js">
@@ -65,6 +65,13 @@
             <p><span class="Description">Foot Ball Cards</span></p>
         </a>
     </div>
-<script src="script.js"></script>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="lightbox-close">&times;</span>
+        <img id="lightbox-image" src="" alt="Project Image">
+    </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

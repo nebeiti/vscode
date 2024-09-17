@@ -1,0 +1,28 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Button Styles */
+#dark-mode-toggle {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #0056b3;
+}

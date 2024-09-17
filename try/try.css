@@ -12,39 +12,36 @@ body.dark-mode {
     color: #ffffff;
 }
 
-/* Toggle Button Styles */
-.toggle-container {
+/* Label Styles for Toggle Button */
+label[for="dark-mode-toggle"] {
     position: fixed;
     top: 20px;
     right: 20px;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    cursor: pointer;
-    border: 5px solid red;
-    width: 100px;
-    border-radius: 40%;
     z-index: 1000; /* Ensure it appears above other content */
 }
 
 /* SVG Styles */
-.toggle-container svg {
-    width: 40px;
-    height: 40px;
+label[for="dark-mode-toggle"] svg {
+    width: 40px; /* Adjust size to be smaller */
+    height: 40px; /* Adjust size to be smaller */
     fill: #000000; /* Default fill color for light mode */
     transition: fill 0.3s;
 }
 
 /* Hide the Dark Mode SVG by default */
-.toggle-container .Dark {
+label[for="dark-mode-toggle"] .Dark {
     display: none;
 }
 
 /* Show Dark Mode SVG when in dark mode */
-body.dark-mode .toggle-container .Light {
+body.dark-mode label[for="dark-mode-toggle"] .Light {
     display: none;
 }
 
-body.dark-mode .toggle-container .Dark {
+body.dark-mode label[for="dark-mode-toggle"] .Dark {
     display: block;
     fill: #ffffff; /* Ensure the dark mode icon is visible on dark background */
 }

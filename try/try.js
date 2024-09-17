@@ -17,5 +17,5 @@ function applySavedPreference() {
 // Apply the saved preference when the page loads
 applySavedPreference();
 
-// Attach the toggle function to the button
-document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
+// Attach the toggle function to the checkbox change event
+document.getElementById('dark-mode-toggle').addEventListener('change', toggleDarkMode);
