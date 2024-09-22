@@ -42,6 +42,7 @@ header{
  .logo{
      font-size: 3rem;
      font-weight: 800;
+     color: #0000ff;
      cursor: pointer;
      transition: 0.5s ease-in-out;
  }
