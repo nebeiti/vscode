@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
+*{
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     border: none;
+     outline: none;
+     font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
 body {
     background-color: #0D1B2B; 
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    overflow-y: hidden;
     font-family: roboto; 
+    color: white;
+    width: 100vw;
+    height: 100vh;
     -webkit-font-smoothing: antialiased; 
     margin: 0;
 }
@@ -12,58 +26,106 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
+    font-size: 10px;
     padding: 2rem 9%;
-    background-color: #0D1B2B;
+    background-color: #10243b; 
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
-header a{
-    text-decoration: none;
-}
-.logo{
-    font-size: 3rem;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
+ .active{
+     border-bottom: 3px solid #ff0000;
+ }
+ .logo{
+     font-size: 3rem;
+     font-weight: 800;
+     cursor: pointer;
+     transition: 0.5s ease-in-out;
+ }
+ 
+ .logo:hover{
+     transform: scale(1.1);
+     color: #e0aa3e;
+ }
+ #nav-menu{
+     margin: 20px;
+ }
+ nav a{
+     margin-top: 2.3rem;
+     font-size: 2.2rem;
+     color: #fffefef1;
+     margin-left: 4rem;
+     font-weight: 500;
+     transition: 0.3s ease;
+     border-bottom: 3px solid transparent;
+ }
+ .menu-icon {
+     font-size: 2.5rem;
+     color: white;
+     cursor: pointer; 
+     opacity: 0; 
+ }
+ 
+ nav a:hover{
+     color: #d19724;
+     border-bottom: 3px solid #ff0000;
+     transition: 0.5s ease-in-out;
+ }
+ nav a:active{
+     color: #bb3520e1;
+ }
+ @media(max-width:996px){
+     body{
+         margin: 0;
+         padding: 0;
+     }
+     html{
+         font-size: 40%;
+     }
+    nav a:active{
+         display: block;
+         color: rgb(235, 46, 109);
+ }
+ .menu-icon{
+     opacity: 1;
+ }
+     nav{
+         display: none;
+         position: absolute;
+         top: 0;
+         right: 0;
+         width: 40%;
+         border-top-right-radius: 2.5rem;
+         border-bottom-left-radius: 2.5rem;
+         background-color: #161616;
+         border-top: 0.1rem solid rgba(0,0,0,0.1);
+         border: 5px solid #0000ff;
+         margin-top: 7rem;
+         margin-right: 2rem;
+         padding: 0;
+     }
+     nav.active {
+         display: block;
+     }
+ 
+     nav a{
+         display: block;
+         font-size: 2rem;
+         margin: 3rem 0;
+         margin-left: 2rem;
+ 
+     }
+ 
+     nav a:hover,
+     nav a:active{
+         padding: 0.5rem;
+     }
+ }
 
-.logo:hover{
-    transform: scale(1.1);
-    color: #e0aa3e;
-}
-#nav-menu{
-    margin: 20px;
-}
-nav a{
-    margin-top: 2.3rem;
-    font-size: 2.2rem;
-    color: #fffefef1;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-    padding-bottom: 3px;
-}
-.active{
-    border-bottom: 3px solid #ff0000;
-}
-.menu-icon {
-    font-size: 2.5rem;
-    color: white;
-    cursor: pointer; 
-    opacity: 0; 
-}
-
-nav a:hover{
-    color: #d19724;
-    border-bottom: 3px solid #ff0000;
-}
-nav a:active{
-    color: #bb3520e1;
-}
+  
 .flex {
     display: flex; 
     display: flex; 
@@ -91,32 +153,27 @@ nav a:active{
      color: #fff; 
      padding:3vw 18vw 3vw 9vw;
 }
-.slide-date {
+.Skill {
     color: #0a8acb;
     font-size: 1.1vw; 
     font-weight: 400;
     letter-spacing: 0.1vw;
     padding-bottom: 1.4vw;
 }
-.slide-title {
+.Skill-abbr {
     font-size: 1.2vw;
     font-weight: 400;
     letter-spacing: 0.1vw;
     line-height: 1.55vw;
     padding-bottom: 1.8vw;
 }
-.slide-text {
-    font-size: 0.80vw;
+.Skill-description {
+    font-size: 0.90vw;
     line-height: 1.2vw;
-    opacity: 0.8;
+    color: #ccc;
     padding-bottom: 4vw;
 }
-.slide-more {
-    font-weight: 400;
-    letter-spacing: 0.1vw;
-    float: left;
-    font-size: 0.9vw;
-}
+
 .slide-bullet {
     width: 0.5vw;
     height: 0.5vw;
@@ -139,7 +196,6 @@ div.overlay-blue {
 div.overlay-blue:hover {
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
-    /* background-color: rgba(13, 27, 43, 0.5); */
 }
 
 .arrows{
@@ -182,12 +238,5 @@ div.overlay-blue:hover {
     transform: rotate(135deg);
     right: 0;
 }
-nav a{
-    margin-top: 2.3rem;
-    font-size: 1.2rem;
-    color: #fffefef1;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-}
+
+ 

@@ -8,10 +8,9 @@
           btn         = s.find('.slider-link'),
           sWidth      = sItem.width(),
           sCount      = sItem.length,
-          slide_date  = s.find('.slide-date'),
-          slide_title = s.find('.slide-title'),
-          slide_text  = s.find('.slide-text'),
-          slide_more  = s.find('.slide-more'),
+          slide_date  = s.find('.Skill'),
+          slide_title = s.find('.Skill-abbr'),
+          slide_text  = s.find('.Skill-description'),
           slide_image = s.find('.slide-image img'),
           sTotalWidth = sCount * sWidth;
       
