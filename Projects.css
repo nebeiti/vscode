@@ -172,8 +172,9 @@ a{
         border-top-right-radius: 2.5rem;
         border-bottom-left-radius: 2.5rem;
         background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-        border: 5px solid #0000ff;
+        /* border-top: 0.1rem solid rgba(0,0,0,0.1); */
+        border-bottom: 93px solid #ff00ff;
+        border: 5px solid #ff00ff;
         margin-right: 2rem;
         padding: 0;
     }
@@ -181,7 +182,10 @@ a{
     nav.active {
         display: block;
     }
-
+    .active{
+        margin-right: 2rem;
+        border-bottom: 3px solid #ff00ff;
+    }
     nav a{
         display: block;
         font-size: 2rem;

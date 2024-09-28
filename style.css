@@ -203,10 +203,7 @@ span{
     html{
         font-size: 40%;
     }
-    .social-icons a{
-        margin-top: 2rem;
-        margin-bottom: 20rem;
-    }
+
    nav a:active{
         display: block;
         color: rgb(235, 46, 109);
@@ -217,26 +214,33 @@ span{
     nav{
         display: none;
         position: absolute;
+        margin-top: 230em;
         top: 0;
+        bottom: 20;
         right: 0;
         width: 40%;
         border-top-right-radius: 2.5rem;
         border-bottom-left-radius: 2.5rem;
         background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-        border: 5px solid #0000ff;
-        margin-top: 7rem;
+        /* border-top: 0.1rem solid rgba(0,0,0,0.1); */
+        border-bottom: 93px solid #ff00ff;
+        border: 5px solid #ff00ff;
         margin-right: 2rem;
         padding: 0;
     }
+
     nav.active {
         display: block;
     }
-
+    .active{
+        margin-right: 2rem;
+        border-bottom: 3px solid #ff00ff;
+    }
     nav a{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+        border-bottom: #161616;
         margin-left: 2rem;
 
     }
@@ -269,7 +273,7 @@ span{
     .home-img img{
         position: relative;
         border: 2px solid #0404a9d2;
-        background-color: red;
+        background-color: rgb(150, 66, 66);
     }
     .home-img img:hover {
         box-shadow: 0 3px 2px 1px #0404a9d2;
