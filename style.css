@@ -267,6 +267,10 @@ span{
     nav a:active{
         padding: 0.5rem;
     }
+    .social-icons a svg{
+        margin-bottom: 100%;
+        fill: red;
+    }
 }
 @media (max-width: 1000px){
     .home{
@@ -327,6 +331,7 @@ span{
 .social-icons a svg{
     height: 32px;
     fill: rgb(0, 0, 0);
+    margin-top: -10px;
 }
 .social-icons a::before{
     content: attr(social-name);
