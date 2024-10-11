@@ -101,8 +101,8 @@ a{
     border-bottom: 3px solid #0000ff;
 }
 .projects{
-    margin-left: 2remd;
-    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -115,7 +115,6 @@ a{
     width: 420px;
     height: 370px;
 }
-/* Lightbox Styles */
 .lightbox {
     display: none;
     position: fixed;
@@ -235,7 +234,7 @@ a{
         margin-right: 0;
         font-size: 15px;
         justify-content: center;
-        margin-top: 26%;
+        margin-top: 5em;
         margin-bottom: 0x;
         margin-left: 7px;
     }
