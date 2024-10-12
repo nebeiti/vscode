@@ -332,9 +332,9 @@ span{
     box-shadow: 0 5px 10px 2px var(--social-color);
 }
 .social-icons a svg{
-    height: 32px;
+    height: 33px;
     fill: rgb(0, 0, 0);
-    margin-top: -10px;
+    margin-top: -3px;
 }
 .social-icons a::before{
     content: attr(social-name);
