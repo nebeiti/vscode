@@ -177,8 +177,8 @@ a{
         border-bottom-left-radius: 2.5rem;
         background-color: #161616;
         /* border-top: 0.1rem solid rgba(0,0,0,0.1); */
-        border-bottom: 93px solid #ff00ff;
-        border: 5px solid #ff00ff;
+        border-bottom: 93px solid #00ffee;
+        border: 5px solid #00ffee;
         margin-right: 2rem;
         padding: 0;
     }
@@ -188,7 +188,7 @@ a{
     }
     .active{
         margin-right: 2rem;
-        border-bottom: 3px solid #ff00ff;
+        border-bottom: 3px solid #00ffee;
     }
     nav a{
         display: block;
