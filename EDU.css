@@ -48,13 +48,14 @@ body {
     flex-wrap: wrap;
     position: relative;
 }
-.timeline-items::before{
+.timeline-items::before {
     content: "";
     position: absolute;
     width: 5px;
-    height: 5px;
     background-color: var(--main-color);
-    left: calc(50% - 1px);
+    left: calc(50% - 2.5px);
+    top: 0;
+    bottom: 0;
 }
 .timeline-item{
     margin-bottom: 40px;
@@ -78,11 +79,11 @@ body {
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color);
     position: absolute;
-    left: calc(50% - 8px);
+    left: calc(50% - 10px);
     border-radius: 50%;
     top: 10px;
 }
-.timeline-date{
+.timeline-data{
     font-size: 25px;
     font-weight: 800;
     color: white;
@@ -122,4 +123,28 @@ body {
 ::-webkit-scrollbar-track{
     background-color: var(--bg-color);
     width: 50px;
+}
+
+@media(max-width:1285px){
+    .heading{
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
 }

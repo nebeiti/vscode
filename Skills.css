@@ -9,21 +9,15 @@
 }
 html{
     font-size: 62.5%;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-*{
-     margin: 0;
-     padding: 0;
-     text-decoration: none;
-     border: none;
-     outline: none;
-     font-family: 'Poppins', sans-serif;
+    background-color: rgb(7, 0, 17);
+
 }
 html{
     font-size: 62.5%;
 }
 body {
     background-color: #0D1B2B; 
+    background-color: rgb(7, 0, 17);
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: roboto; 
@@ -40,56 +34,58 @@ header{
     width: 100%;
     box-sizing: border-box;
     padding: 1rem 9%;
-    background-color: #10243b; 
+    background-color: rgb(10, 0, 30); 
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
- .active{
-     border-bottom: 3px solid #ff0000;
- }
- .logo{
+.active{
+     border-bottom: 3px solid #00ffee;
+     color: white;
+}
+.logo{
      font-size: 3rem;
-     font-weight: 800;
-     color: #0000ff;
+     font-weight: 900;
+     text-shadow: 2px 2px #FF0000;
+     color: #00ffee;
      cursor: pointer;
      transition: 0.5s ease-in-out;
- }
+}
  
- .logo:hover{
+.logo:hover{
      transform: scale(1.1);
      color: #e0aa3e;
- }
- #nav-menu{
+}
+#nav-menu{
      margin: 20px;
- }
- nav a{
+}
+nav a{
      margin-top: 2.3rem;
      font-size: 2.2rem;
-     color: #fffefef1;
+     color: #fffefeaf;
      margin-left: 4rem;
      font-weight: 500;
      transition: 0.3s ease;
      border-bottom: 3px solid transparent;
- }
- .menu-icon {
+}
+.menu-icon {
      font-size: 2.5rem;
      color: white;
      cursor: pointer; 
      opacity: 0; 
- }
+}
  
- nav a:hover{
+nav a:hover{
      color: #d19724;
-     border-bottom: 3px solid #ff0000;
+     border-bottom: 3px solid #00ffee;
      transition: 0.5s ease-in-out;
- }
- nav a:active{
+}
+nav a:active{
      color: #bb3520e1;
- }
- @media(max-width:996px){
+}
+@media(max-width:996px){
     body{
         margin: 0;
         padding: 0;
@@ -160,10 +156,12 @@ header{
 }
 .slide-image {
     height: 24vw;
+    box-sizing: border-box;
 }
 .slide-image img {
     width: 24vw; 
     cursor: pointer;
+    border: 1px solid #00ffee;
 }
 .slide-content {
     width: 25vw;
@@ -171,7 +169,7 @@ header{
     padding: 3vw 18vw 3vw 9vw;
 }
 .Skill {
-    color: #0a8acb;
+    color: #00ffee;
     font-size: 1.1vw; 
     font-weight: 400;
     letter-spacing: 0.1vw;
