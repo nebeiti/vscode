@@ -111,7 +111,7 @@ a{
 .timeline-items:last-of-type{
     margin-bottom: 2rem;
 }
-@media(max-width:996px){
+@media(max-width:1166px){
     body{
         margin: 0;
         padding: 0;
