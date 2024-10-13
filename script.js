@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const xbuttonImage = document.getElementById('xbutton-image');
     const xbuttonClose = document.getElementById('xbutton-close');
 
-    document.querySelectorAll('.projects a').forEach(link => {
+    document.querySelectorAll('.projects a, .Certifications a').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             xbuttonImage.src = e.currentTarget.href;
