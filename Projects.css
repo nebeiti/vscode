@@ -150,7 +150,7 @@ a{
     cursor: pointer;
 }
 
-@media(max-width:1166px){
+@media(max-width:1201px){
     body{
         margin: 0;
         padding: 0;

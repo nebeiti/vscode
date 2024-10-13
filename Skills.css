@@ -85,7 +85,7 @@ nav a:hover{
 nav a:active{
      color: #bb3520e1;
 }
-@media(max-width:996px){
+@media(max-width:1201px){
     body{
         margin: 0;
         padding: 0;
