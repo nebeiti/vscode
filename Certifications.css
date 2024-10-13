@@ -139,8 +139,14 @@ h1{
     height: 25em;
     width: 33em;
     border: 1px solid #00ffee;
+    box-shadow: 0 0 10px #00ffee;
     align-items: center;
     align-content: center;
+}
+.Certifications img:hover{
+    transform: scale(1.05);
+    transition: 0.75s ease-out;
+    box-shadow: 0 0 25px #00ffee;
 }
 .xbutton {
     display: none;
@@ -234,11 +240,7 @@ h1{
         display: block;
     }
 }
-    .Certifications img:hover{
-        transform: scale(1.05);
-        transition: 0.5s ease-in-out;
-        box-shadow: 0 0 25px #00ffee;
-}
+
 ::-webkit-scrollbar{
     width: 10px;
 }
