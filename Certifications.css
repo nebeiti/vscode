@@ -114,21 +114,33 @@ a img{
 
 }
 h1{
-    margin-top: 10pc;
+    margin-top: 8pc;
     font-size: 3rem;
-    border: 3px solid red;
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
 .Certifications{
     margin-left: 2rem;
     margin-bottom: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1f; 
+    grid-template-rows: 1fr 1fr; 
+    align-items: center;
+    align-content: center;
+}
+.Certifications a{
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
 .Certifications img{
-    width: 20em;
+    height: 25em;
+    width: 33em;
     border: 1px solid #00ffee;
-
+    align-items: center;
+    align-content: center;
 }
 .xbutton {
     display: none;
@@ -216,4 +228,24 @@ h1{
     nav a:active{
         padding: 0.5rem;
     }
+}
+@media(max-width:575px){
+    .Certifications{
+        display: block;
+    }
+}
+    .Certifications img:hover{
+        transform: scale(1.05);
+        transition: 0.5s ease-in-out;
+        box-shadow: 0 0 25px #00ffee;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #00ffee;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width: 50px;
 }

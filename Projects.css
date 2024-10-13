@@ -48,7 +48,6 @@ h1{
     align-items: center;
     align-content: center;
     z-index: 100;
-    /* border: 10px solid red; */
 }
 .logo{
     font-size: 3rem;
@@ -174,7 +173,17 @@ a{
     html{
         font-size: 40%;
     }
-
+    h1{
+        padding: 4rem;
+        margin-top: 4em;
+        margin-bottom: 0;
+        font-size: 3rem;
+        font-weight: 400;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
    nav a:active{
         display: block;
         color: rgb(235, 46, 109);
