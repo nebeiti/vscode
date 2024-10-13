@@ -37,6 +37,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+// Get the close button element
+const closeButton = document.getElementById('xbutton-close');
+
+// Add an event listener for keydown events
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' || event.key === 'Enter') {
+        // Simulate a click on the close button
+        closeButton.click();
+    }
+});
+
+// Define what happens when the close button is clicked
+closeButton.addEventListener('click', function() {
+    // Hide the xbutton div or perform another action
+    const xbuttonDiv = document.getElementById('xbutton');
+    xbuttonDiv.style.display = 'none'; // Hides the div
+});
+
 ( function($) {
   
     $(document).ready(function() {

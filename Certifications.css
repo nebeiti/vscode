@@ -131,6 +131,7 @@ h1{
 }
 .Certifications a{
     padding: 0;
+    cursor: auto;
     text-align: center;
     align-items: center;
     align-content: center;
@@ -138,14 +139,16 @@ h1{
 .Certifications img{
     height: 25em;
     width: 33em;
+    cursor: pointer;
     border: 1px solid #00ffee;
     box-shadow: 0 0 10px #00ffee;
     align-items: center;
     align-content: center;
+    transition: all 0.75s ease-in;
 }
 .Certifications img:hover{
     transform: scale(1.05);
-    transition: 0.75s ease-out;
+    transition: all 0.75s ease-in;
     box-shadow: 0 0 25px #00ffee;
 }
 .xbutton {
