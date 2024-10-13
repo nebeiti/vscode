@@ -15,25 +15,25 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImage = document.getElementById('lightbox-image');
-    const lightboxClose = document.getElementById('lightbox-close');
+    const xbutton = document.getElementById('xbutton');
+    const xbuttonImage = document.getElementById('xbutton-image');
+    const xbuttonClose = document.getElementById('xbutton-close');
 
     document.querySelectorAll('.projects a').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            lightboxImage.src = e.currentTarget.href;
-            lightbox.style.display = 'flex';
+            xbuttonImage.src = e.currentTarget.href;
+            xbutton.style.display = 'flex';
         });
     });
 
-    lightboxClose.addEventListener('click', () => {
-        lightbox.style.display = 'none';
+    xbuttonClose.addEventListener('click', () => {
+        xbutton.style.display = 'none';
     });
 
-    lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) {
-            lightbox.style.display = 'none';
+    xbutton.addEventListener('click', (e) => {
+        if (e.target === xbutton) {
+            xbutton.style.display = 'none';
         }
     });
 });
