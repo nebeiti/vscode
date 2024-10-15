@@ -12,7 +12,6 @@
 html{
     font-size: 62.5%;
     background-color: white;
-    /* background-color: #0D1B2B;  */
     background-color: rgb(7, 0, 17);
 }
 body{
@@ -93,12 +92,184 @@ nav a::after{
   bottom: -6px;
   transition: 0.5s;
 }
-.contact-left{
-    flex-basis: 35%;
+input{
+    border-radius: 40px;
 }
-.contact-right{
-    flex-basis: 60%;
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin-left: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.contact-left p{
+
+.contact {
+    padding: 50px 20px;
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 150px auto;
+}
+
+.container {
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.contact label{
+    font-size: 17px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+form{
+    border-radius: 50%;
+}
+
+.EP{
+    font-size: 25px;
+}
+
+.EP i{
+    color: #00ffee;
+    margin: 0 2rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #00FF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.social-media {
     margin-top: 30px;
+    text-align: center;
+}
+
+.social-media h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.social-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 10px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+}
+@media(max-width:1201px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size: 40%;
+    }
+
+   nav a:active{
+        display: block;
+        color: rgb(235, 46, 109);
+}
+.menu-icon{
+    opacity: 1;
+}
+    nav{
+        display: none;
+        position: absolute;
+        margin-top: 230em;
+        top: 0;
+        bottom: 20;
+        right: 0;
+        width: 40%;
+        border-top-right-radius: 2.5rem;
+        border-bottom-left-radius: 2.5rem;
+        background-color: #161616;
+        border-bottom: 93px solid #00ffee;
+        border: 5px solid #00ffee;
+        margin-right: 2rem;
+        padding: 0;
+    }
+
+    nav.active {
+        display: block;
+    }
+    .active{
+        margin-right: 2rem;
+        border-bottom: 3px solid #00ffee;
+    }
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        border-bottom: #161616;
+        margin-left: 2rem;
+
+    }
+
+    nav a:hover,
+    nav a:active{
+        padding: 0.5rem;
+    }
 }

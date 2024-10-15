@@ -243,7 +243,12 @@ h1{
         display: block;
     }
 }
-
+@media (max-width:571px) {
+   .Certifications img{
+    height: 18em;
+    width: 22em;
+   } 
+}
 ::-webkit-scrollbar{
     width: 10px;
 }
