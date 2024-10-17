@@ -18,6 +18,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
     color: white;
     background-color: rgb(7, 0, 17);
 }
@@ -104,14 +105,19 @@ a{
 }
 
 .contact {
-    padding: 50px 20px;
-    background-color: #000;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 55px 25px;
+    background-color: rgb(7, 0, 17);
+    border: 1px solid #00ffee;
+    backdrop-filter: blur(10px);
+    border-radius: 15%;
+    box-shadow: 0 0 10px #00ffee;
     max-width: 600px;
-    margin: 150px auto;
+    margin: 140px auto;
+    transition: all .2s ease-in;
 }
-
+h3{
+    font-size: 2rem;
+}
 .container {
     display: flex;
     border-radius: 20px;
@@ -120,6 +126,14 @@ a{
 
 .contact label{
     font-size: 17px;
+}
+
+.contact:hover,
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+    box-shadow: 0 0 7px #00ffee;
+    transition: all .2s ease-in;
 }
 
 h2 {
@@ -170,22 +184,26 @@ textarea:focus {
 }
 
 .submit-btn {
-    background-color: #00FF;
+    background-color: rgb(2, 210, 210);
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 4px;
     align-items: center;
+    justify-content: center;
     align-content: center;
     text-align: center;
     align-self: center;
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .submit-btn:hover {
     background-color: #0056b3;
+    box-shadow: 0 0 17px #00ffee;
+
 }
 
 .social-media {
@@ -202,22 +220,33 @@ textarea:focus {
     margin: 0 10px;
     text-decoration: none;
     color: #007BFF;
-    font-size: 24px;
+    font-size: 32px;
     transition: color 0.3s;
 }
 
 .social-icon:hover {
-    color: #0056b3;
+    color: #52a5fe;
+    box-shadow: 0 0 20px #00ffee;
+    box-sizing: border-box;
+    border-radius: 40%;
 }
 
 @media (max-width: 768px) {
     .contact {
         padding: 30px 10px;
+        border-radius: 10%;
     }
 
-    .social-icon {
+    .social-media {
         font-size: 20px;
     }
+    h3{
+        font-size: 3rem;
+    }
+    .EP{
+        font-size: 3rem;
+    }
+
 }
 @media(max-width:1201px){
     body{

@@ -156,21 +156,23 @@ span{
 .typing-text{
     font-size: 3.5rem;
     min-width: 280px;
+    transition: all .2s ease-in;
 }
 
 .typing-text span{
     position: relative;
+    transition: all .2s ease-in;
 }
 
 .typing-text span::before{
     content: "";
     color: #e0aa3e;
+    transition: all .2s ease-in;
     animation: words 15s infinite;
 }
 .typing-text span:hover{
     font-size: 1.1em;
-    transition: 200ms ease;
-
+    transition: 200ms ease-in;
     color: blue;
 }
 
@@ -347,9 +349,27 @@ span{
     }
 }
 
-@media(max-width:950px){
+@media(max-width:650px){
+    .social-icons a{
+        margin-bottom: 5rem;
+        padding: 1em;
+        border-radius: 50%;
+        margin-bottom: 17px;
+        height: 54px;
+        width: 54px;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        position: relative;
+        display: grid;
+        place-items: center;
+    }
     .social-icons a svg{
-        fill: red;
+        align-items: center;
+        align-content: center;
+        box-sizing: border-box;
+    }
+    .typing-text{
+        font-size: 3rem;
     }
     .home{
         flex-direction: column;
