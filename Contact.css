@@ -135,7 +135,9 @@ h3{
     box-shadow: 0 0 7px #00ffee;
     transition: all .2s ease-in;
 }
-
+textarea{
+    resize: none;
+}
 h2 {
     font-size: 30px;
     margin-bottom: 30px;
