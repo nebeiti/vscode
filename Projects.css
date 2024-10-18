@@ -230,7 +230,6 @@ a{
         margin-left: 2rem;
 
     }
-
     nav a:hover,
     nav a:active{
         padding: 0.5rem;
@@ -244,8 +243,8 @@ a{
     }
     
     .projects img{
-        width: 122px;
-        height: 122px;
+        width: 19em;
+        height: 17em;
         margin-left: 0;
         margin-top: 5px;
         border: 3px solid #0000ff;
@@ -277,9 +276,24 @@ a{
         margin-left: 7px;
     }
   }
-  @media (max-width:400) {
-    
-  }
+  @media (max-width:456px) {
+    .projects img{
+        height: 17em;
+        width: 20rem;
+        margin-right: 25px;
+        margin-left: 0;
+    }
+}
+@media (max-width:1416px) {
+    .projects img{
+        width: 38rem;
+    }
+}
+@media (max-width:1271px) {
+    .projects img{
+        width: 32rem;
+    }
+}
 ::-webkit-scrollbar{
     width: 10px;
 }

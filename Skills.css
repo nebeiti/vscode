@@ -259,9 +259,19 @@ div.overlay-blue:hover {
     transform: rotate(135deg);
     right: 0;
 }
-
+@media (max-width:1001px) {
+    body{
+        font-size: 2rem;
+    }
+    .slide-content, .slide-flex, .slide-image, .img{
+        display: block;
+    }
+    .img{
+        display: block;
+    }
+}
  
- @media(max-width:1166px){
+ @media(max-width:1201px){
     body{
         margin: 0;
         padding: 0;
