@@ -165,12 +165,12 @@ nav a:active{
     box-sizing: border-box;
 }
 .slide-image img {
-    width: 24vw; 
+    width: 21vw; 
     cursor: pointer;
     border: 1px solid #00ffee;
 }
 .slide-content {
-    width: 25vw;
+    width: 2vw;
     color: #fff; 
     padding: 3vw 18vw 3vw 9vw;
 }
@@ -258,6 +258,21 @@ div.overlay-blue:hover {
 .arrow.next {
     transform: rotate(135deg);
     right: 0;
+}
+@media (max-width:800px) {
+
+    .slide-content{
+        font-size: 12em;
+        border: 10px solid red;
+    }
+    img{
+        display: block;
+    }
+    .slide-flex{
+        display: block;
+        border: 10px solid green;
+    }
+    
 }
 @media (max-width:1001px) {
     body{

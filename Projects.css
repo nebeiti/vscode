@@ -277,12 +277,14 @@ a{
     }
   }
   @media (max-width:456px) {
-    .projects img{
-        height: 17em;
-        width: 20rem;
-        margin-right: 25px;
-        margin-left: 0;
+    .projects{
+        height: 15em;
+        width: 1em;
+        margin-left: -6px;
+        margin-bottom: 0;
+        margin-right: -3em;
     }
+
 }
 @media (max-width:1416px) {
     .projects img{
